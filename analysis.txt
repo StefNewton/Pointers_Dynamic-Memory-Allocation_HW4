@@ -1,0 +1,105 @@
+*******************************************************
+*  Name      :  Stefani Moore        
+*  Student ID:  106789878  
+*  Class     :  CSCI 2421           
+*  HW#       :  4                
+*  Due Date  :  Sept. 19, 2016
+*******************************************************
+
+
+                  Analysis
+
+
+*******************************************************
+*  Asymptotic Analysis
+*******************************************************
+
+-From Big 'O's derived below
+
+O(n) + O(n) + O(n) + O(1) + O(1) + O(1) = O(3n + 3) = O(n)
+
+
+Final Result: O(n)
+
+*******************************************************
+*  Member Functions
+*******************************************************
+
+T operator[] (int index) /// O(n)
+{
+
+f(1) + f(1) + f(n) + f(1) + f(1) = f(n + 4)
+
+Big 'O' = O(n)
+
+MyVector obj = f(1)
+int const = f(1)
+for loop executes n times w/ each statement inside being f(1) so it is = f(n) 
+return statement = f(1)
+delete = f(1)
+
+}
+
+*******************************************************
+
+void pop_back()  /// O(n)
+{
+
+f(n) + f(1) = f(n+1)
+
+Big 'O' = O(n)
+
+-If statement = f(1)
+
+-else statement  = f(n)
+
+	-> 3 constants f(3)
+	-> if nested f(1)
+	-> else nested 
+		->while loop executes n times = f(n)
+	-->worst case = f(n) so overall nested if/else statment = f(n)
+-If/else worst case is else with f(n) so If/else = f(n)
+
+return = f(1)
+}   
+***********************************************************************
+void push_back(T value) /// O(1)
+{
+
+f(3) + f(1) = f(4)
+
+Big 'O' = O(1)
+
+3* f(1) for pointer object and new memory allocations = f(3)
+-If contains only constant arguments and so does else so = f(1)
+}   
+
+*******************************************************
+int size()	/// O(1)
+{
+ return statement = f(1) = O(1)
+}
+
+*******************************************************
+bool empty()	///O(1)
+{
+
+ return statement = f(1) = O(1)
+}
+*******************************************************
+int search(T Value, MyVector & vec) /// O(n)
+{
+
+  f(n) + f(1) = f(n+1)
+
+  Big 'O' = O(n)
+
+   For loop contains multiple f(1) statements and is iterated
+   based on vec.size() so will execute f(n) times = f(n)
+ 
+   return statement = f(1)
+
+}
+
+
+
